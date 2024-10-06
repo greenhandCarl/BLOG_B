@@ -28,13 +28,13 @@ const items: MenuItem[] = [
     {
         key: '2',
         icon: <FolderOpenOutlined />,
-        label: 'Navigation Two',
+        label: 'My folders',
         children: [
-            { key: '21', label: 'Option 1' },
-            { key: '22', label: 'Option 2' },
+            { key: '21', label: 'Backend' },
+            { key: '22', label: 'EnglishStudy' },
             {
                 key: '23',
-                label: 'Submenu',
+                label: 'Interview',
                 children: [
                     { key: '231', label: 'Option 1' },
                     { key: '232', label: 'Option 2' },
@@ -43,7 +43,7 @@ const items: MenuItem[] = [
             },
             {
                 key: '24',
-                label: 'Submenu 2',
+                label: 'Frontend',
                 children: [
                     { key: '241', label: 'Option 1' },
                     { key: '242', label: 'Option 2' },
@@ -125,7 +125,7 @@ const SideBar: FC<Props> = () => {
                 mode="inline"
                 openKeys={stateOpenKeys}
                 onOpenChange={onOpenChange}
-                style={{ width: 208 }}
+                style={{ width: 208, marginTop: 22, fontSize: 13 }}
                 items={items}
             />
             {/* <Tooltip
