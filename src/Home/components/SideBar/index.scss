@@ -1,0 +1,48 @@
+.sideBar {
+    min-height: 100vh;
+    padding-top: 32px;
+    width: 208px;
+    box-sizing: border-box;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .newButton {
+        margin-top: 20px;
+        width: 144px;
+        height: 36px;
+        background-color: var(--brand-5);
+        color: white;
+        font-size: 16px;
+    }
+
+    .add {
+        margin-top: 74px;
+        margin-bottom: 14px;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        color: #5b89fe;
+        cursor: pointer;
+    }
+
+    .folder {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &.active {
+            color: #5b89fe;
+        }
+    }
+}

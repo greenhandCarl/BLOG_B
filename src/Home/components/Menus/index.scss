@@ -1,0 +1,150 @@
+.menusContainer {
+    width: 260px;
+    min-height: 100vh;
+    border-right: 1px solid #f0f3f5;
+
+    .searchBox {
+        height: 72px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .operate {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .backTitle {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            height: 30px;
+            position: relative;
+
+            .backArrow {
+                position: absolute;
+                z-index: 10;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+
+            .folderTitle {
+                font-size: 14px;
+                color: #4e5a70;
+            }
+        }
+
+        .empty {
+            padding-top: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .emptyIcon {
+                width: 140px;
+                height: 140px;
+            }
+
+            .emptyText {
+                font-size: 14px;
+                color: #7a8599;
+            }
+
+            .newBtn {
+                margin-top: 12px;
+                width: 88px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 14px;
+                background-color: #5b89fe;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+        .item {
+            width: 238px;
+            height: 74px;
+            box-sizing: border-box;
+            margin-bottom: 4px;
+            border-radius: 4px;
+            padding: 13px 8px;
+            border-bottom: 1px solid #f0f3f5;
+            position: relative;
+
+            .more {
+                position: absolute;
+                z-index: 10;
+                top: 13px;
+                right: 8px;
+                width: 20px;
+                height: 20px;
+                display: none;
+            }
+
+            &:hover {
+                background-color: var(--fill-2);
+                .more {
+                    display: inline-block;
+                }
+            }
+
+            &.selected {
+                background-color: var(--fill-2);
+            }
+
+            .title {
+                display: flex;
+                cursor: pointer;
+
+                .folderIcon  {
+                    width: 20px;
+                    height: 20px;
+                    color: #ffbc4c;
+                }
+                .fileIcon {
+                    width: 20px;
+                    height: 20px;
+                    color: #37b3fd;
+                }
+                .titleText {
+                    padding-left: 6px;
+                    color: #232d47;
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .titleInput {
+                    padding: 0;
+                    padding-left: 6px;
+                }
+            }
+
+            .date {
+                padding-top: 4px;
+                font-size: 12px;
+                color: #a9b2c2;
+            }
+        }
+    }
+}
